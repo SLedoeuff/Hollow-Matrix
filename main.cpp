@@ -5,48 +5,20 @@
 #include <fstream>
 #include <iomanip>
 #include <cstdlib>
-#ifndef _test
-#define _test
+#include "test.h"
 
 using namespace std;
 
 
-class lcv
-{
-	private:
-		int li;
-		int co;
-		int val;
-		lcv* suiv;
-      		friend class matrice;
-
-	public:
-		lcv(int,int,int);
-		
-		
-};
-
-class matrice
-{
-	private:
-		lcv *tete;
-
-	public:
-		matrice();
-		void ajout(int,int,int);
-		void affiche();
-		void addition(matrice);
-		void soustraction();
-		void multiplication();
-		//void carré();
-		void transposition();
-
-
-		void lecture();
-		void ecriture();
-		
-		
-};
-
-
-#endif
+int main() {
+	matrice A;
+	matrice B;
+	A.ajout(1,2,3);
+	A.ajout(4,5,6);
+	B.ajout(4,5,6);
+	B.ajout(7,8,9);
+	A.affiche();
+	B.affiche();
+	A.addition(B);
+	A.affiche();
+}
