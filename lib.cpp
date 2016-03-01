@@ -73,7 +73,7 @@ void matrice::addition(matrice B)
 void matrice::soustraction(){}
 void matrice::multiplication(){}
 //void matrice::carré(){}
-void matrice::transposition(){}
+void matrice::transposition(){} // à faire en python , voir script.py
 
 
 void matrice::lecture(){}
