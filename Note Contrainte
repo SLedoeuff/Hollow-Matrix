@@ -2,6 +2,8 @@ contrainte technique
 optimisation du temps de recherche dans la base de données
 eviter le superflu
 choix du serveur: un serveur interne -> intranet
+doit fonctionner sur tout les suppoer (OS/navigateur web)
+l'utilisation de formulaire ne peut se faire que par des membres (si la personne n'est pas client il ne eput pas)
 
 
 contrainte de gestion
