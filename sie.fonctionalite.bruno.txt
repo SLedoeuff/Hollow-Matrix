@@ -1,0 +1,21 @@
+fonctionalité:
+
+
+-l'appli prend la forme d'une sorte de reseaux social interne a l'entreprise
+-inscription auto de tous les membre de la société mais en non vip
+-boite mail interne lié au compte
+-connextion avec identifiant société
+-remplissage du profil a la premiere connextion (photo nom prenom adresse tel deja renseigné, il faut ici principalement renseigner sa famille femme, enfant etc)
+-formulaire dajout de membre de la famille
+-bdd des familles des employés
+-possibilit" de rejoindre un groupe par un systeme de mot clées
+-membre recoivent:new letters, generale et des groupe auquels ils apartiennent,inscription au manifestation, dans leur boite mail interne, cheque cadeau.
+-possibilite de passer adherent en s'aquittant de la cotisation, un adherent de l'année X le reste jusqua la troisieme semaine de janvier de lannée X+1 pour laisser un delai au payment de la cot sans perte momenttané du statut 
+-adherent on acce au page "magasin" ou divers article leur son propose  et ou il peuvent faire la demande d'article specifique
+-adherent recoivent des remise sur leur carte ( informer des remise recu par messagerie)
+-bbd des employer avec un atribut etat ( membre/attente/adherent) avec interface graphique auquel on acce certain employer en fonction de leur atribut:poste
+-accées au page de gestion en fonction du poste.
+
+
+-bdd des reservation/paiment
+-page de consultation/gestion des compte accessible en fonction du poste
