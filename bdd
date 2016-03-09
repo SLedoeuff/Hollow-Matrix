@@ -1,0 +1,13 @@
+bdd profil:
+
+nom,prenom,photo,mdp,date de naissance,adresse,tel,poste,etat(membre/attente/adherent),admin(oui/non),gestion(non/redacteur/gestionaire/president),conjugal(celib/conjoint/marié),enfant(nb),commentaire
+
+bdd reservation:
+
+nom,prenom,reference de l'objet,magasin,prix,etats(a acheter/commander/reçu/finit),payer(oui/non)
+
+bdd famille:
+
+nom,prenom,date naissance,nom employe,prenom employe, statut ( conjoin / marié/enfant)
+
+
