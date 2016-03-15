@@ -36,7 +36,6 @@ class matrice
 		matrice(string);
 		void ajout(int,int,int,string);
 		void affiche();
-		void addsous(int,int,int);
 		void addition(matrice);
 		void soustraction(matrice);
 		void multiplication(matrice);
