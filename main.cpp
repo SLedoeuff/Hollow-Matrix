@@ -20,15 +20,6 @@ int main() {
 	
 	A.affiche();*/
 
-
-/*-----------------test addition/soustraction simple---------*/
-	/*matrice A ("A");
-	A.ajout(1,2,3,"ajj");
-	A.ajout(4,5,6,"ajj");
-	A.affiche();
-	A.addsous(1,2,3);
-	A.affiche();*/
-
 /*-----------------test addition/soustraction mat---------*/
 	matrice A ("A");
 	matrice B ("B");
