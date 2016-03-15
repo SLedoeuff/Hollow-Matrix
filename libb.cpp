@@ -80,21 +80,15 @@ void matrice::affiche()
 
 }
 
-void matrice::addsous(int x,int y,int z)
-{
-	ajout(x,y,z,"add");
-}
-
-
 void matrice::addition(matrice B)
 {
 	lcv* temp=B.tete;
 	while(temp->suiv!=NULL)
 	{
-		addsous(temp->li,temp->co,temp->val);
+		ajout(temp->li,temp->co,temp->val,"add");
 		temp=temp->suiv;
 	}
-	addsous(temp->li,temp->co,temp->val);
+	ajout(temp->li,temp->co,temp->val,"add");
 }
 
 
@@ -103,10 +97,10 @@ void matrice::soustraction(matrice B)
 	lcv* temp=B.tete;
 	while(temp->suiv!=NULL)
 	{
-		addsous(temp->li,temp->co,-(temp->val));
+		ajout(temp->li,temp->co,-(temp->val),"add");
 		temp=temp->suiv;
 	}
-	addsous(temp->li,temp->co,-(temp->val));
+	ajout(temp->li,temp->co,-(temp->val),"add");
 }
 
 
