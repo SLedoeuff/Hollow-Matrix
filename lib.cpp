@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cstdlib>
-#include "test.h"
+#include "lib.h"
 
 using namespace std;
 
@@ -73,7 +73,7 @@ void matrice::addition(matrice B)
 void matrice::soustraction(){}
 void matrice::multiplication(){}
 //void matrice::carré(){}
-void matrice::transposition(){} // à faire en python , voir script.py
+void matrice::transposition(){}
 
 
 void matrice::lecture(){}

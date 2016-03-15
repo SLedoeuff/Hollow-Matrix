@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cstdlib>
-#include "test.h"
+#include "lib.h"
 
 using namespace std;
 
@@ -21,4 +21,7 @@ int main() {
 	B.affiche();
 	A.addition(B);
 	A.affiche();
+  return 0;
+}	
+
 }

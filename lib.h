@@ -5,8 +5,8 @@
 #include <fstream>
 #include <iomanip>
 #include <cstdlib>
-#ifndef _test
-#define _test
+#ifndef _lib
+#define _lib
 
 using namespace std;
 
