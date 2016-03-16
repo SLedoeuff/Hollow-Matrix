@@ -29,7 +29,7 @@ Fonctionnalités :
 
 	- Permettre a l'utilisateur de gerer son profil (droit de modification des information: photo, mot de passe, Situation conjugale, ajout d'Enfants via un formulaire, addresse, téléphone)
 		
-	- Permettre a l'utilisateur de passe de membre à adhérent en payant la cotisation
+	- Permettre a l'utilisateur de passer de membre à adhérent en payant la cotisation
 
 	- Permettre a l'utilisateur de recevoir des newsletters dans une boite mail. 
 	
@@ -37,17 +37,15 @@ Fonctionnalités :
 
 	- Définir les droit d'accès des membre/adherent en fonction de leur poste/ role dans la société ( Administrateur / Gestionnaire / redacteur / Membre normal )
 
-	- Permettre aux adherent d'acheter des billets de cine, musé, theatre...... à prix reduit (prestation commerciale)
+	- Permettre aux adherents d'acheter des billets de cine, musé, theatre...... à prix reduit (prestation commerciale)
 
-	- Permettre aux adherent de beneficer de diverse remise via une carte délivré au moment de l'adhesion
+	- Permettre aux adherents de beneficer de diverse remise via une carte délivré au moment de l'adhesion
 	
-	-
+	- Permettre aux adherents de passer commande ( le CAS jouant alors le role d'intermediaire pour obtenir des reduction en tant que client unique pour obtenir des reduction)
+
+	- Permettre la mise a jour automatique du logiciel 
 	
-	- Création de tutoriel / Bouton assistance contextuelle
-
-	- Proposition de Mise à Jour
-
-	- Création d’événement ( en fonction des groupes / Général etc … )
+	- Permettre de creer des evenement general ou en fonction des groupe 
 
 
 Contraintes
