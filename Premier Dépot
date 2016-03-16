@@ -11,24 +11,19 @@ Contexte :
 
 - Nom : MOGOUAILLE
 - Prestation demandée :
-	 Créer une application de type client serveur ou client léger capable de :
-		- Gérer les activités du CAS 
-		- Gérer et permettre la mise en œuvre de la recette de l'application 
-		- Proposer une garantie et une maintenance ( MAJ )
-		- Prise en charge par la DSI
-		- Moyens organisationnels techniques pour l’installation, gestion administration et formation
+	proposition technique
+		- Créer une application capable de gérer les activités du CAS 
+		- Gérer et permettre la mise en œuvre de la recette de l'application par la DSI
+		- Proposer une garantie et une maintenance
+		- Proposer des moyen de prise en charge par la DSI
+	proposition organisationelle
+		- Moyens organisationnels techniques pour l’installation, gestion administration 
+		- Proposer les moyen nécessaire a la formation des utilisateur et des futurs formateurs
 
-
-
-
-
-	
-	
 
 
 Définition de l'application: 
 
- //- Réseaux Social interne à l'entreprise
 - Gestionnaire de compte
 - Gestionnaire d'application
 
