@@ -11,7 +11,7 @@ Contexte :
 
 - Nom : MOGOUAILLE
 - Prestation demandée :
-	 Recherche une application de type client serveur ou client léger capable de :
+	 Créer une application de type client serveur ou client léger capable de :
 		- Gérer les activités du CAS 
 		- Gérer et permettre la mise en œuvre de la recette de l'application 
 		- Proposer une garantie et une maintenance ( MAJ )
@@ -28,7 +28,7 @@ Contexte :
 
 Définition de l'application: 
 
-- Réseaux Social interne à l'entreprise
+ //- Réseaux Social interne à l'entreprise
 - Gestionnaire de compte
 - Gestionnaire d'application
 
@@ -59,9 +59,9 @@ ou Remplissage du profil ( non automatique ) à la première connexion
 	- Photo
 	- Informations
 	
-- Rejoindre groupe ( via Mot-clé )
+- Rejoindre groupe ( via Mot-clé dans une moteur de recherche ) 
 
-- Définition de droit d'accès à certaine informations et définiton de la capacité de gestion ( Administrateur / Gestionnaire /Membre / Adhérent )
+- Définition de droit d'accès à certaine informations et définition de la capacité de gestion ( Administrateur / Gestionnaire /Membre / Adhérent )
 
 - Mise en place de  Remises ( Informations reçues par mail / Attributions par achat )
 
@@ -82,9 +82,9 @@ Contraintes
 
 Contraintes techniques 
 	
-	Optimisation du temps de recherche dans la base de donnée 
+	Optimisation du temps de recherche dans la base de donnée ( MySQL )
 	Éviter le superflu 
-	Choix du type de serveur
+	Type de serveur ( Apache )
 	Volumétrie 
 	Formulaire de commande 
 	Fonctionner sur tous les supports ( OS / Navigateur Web ) 
@@ -92,9 +92,9 @@ Contraintes techniques
 Contraintes de gestion : 
 
 	Administrateur : Peut avoir accès à tout et tout gérer. 
-	Membre et Adhérent : peut accéder aux outils de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
+	Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
 	Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
-	Gestionnaire : peut accéder aux outils du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
+	Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
 
 
 Contraintes Organisationnelles : 
@@ -107,8 +107,8 @@ Contraintes Organisationnelles :
 
 	Maintenance : 
 
-- L'application doit proposer des mis à jour régulières pour palier aux éventuels bugs et problèmes. 
-- Maintenance régulière des serveurs
+- L'application doit proposer des mises à jour régulières pour palier aux éventuels bugs et problèmes. 
+//- Maintenance régulière des serveurs
 - Possibilité des membres / adhérents / gestionnaires de signaler des éventuels bugs et problèmes liés à l'application.
 
 
@@ -156,3 +156,10 @@ BDD Famille :
 	→ prénom de l'employé 
 	→ statut ( conjoint / mari / femme / enfant ) 
 	
+
+
+
+
+
+
+REFORMULATION !!!!!!!!!
