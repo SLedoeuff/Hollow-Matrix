@@ -14,106 +14,83 @@ Contexte :
 	proposition technique
 		- Créer une application capable de gérer les activités du CAS 
 		- Gérer et permettre la mise en œuvre de la recette de l'application par la DSI
-		- Proposer une garantie et une maintenance
+		- Proposer une garantie et une maintenance de l'application
 		- Proposer des moyen de prise en charge par la DSI
 	proposition organisationelle
 		- Moyens organisationnels techniques pour l’installation, gestion administration 
 		- Proposer les moyen nécessaire a la formation des utilisateur et des futurs formateurs
 
 
+Fonctionnalités : 
 
-Définition de l'application: 
+	- Inscrire automatiquement tous les salariés en tant que membre ( Informations de base : Nom / Prénom ) avec remplissage manuel du reste du profil à la première connexion
 
-- Gestionnaire de compte
-- Gestionnaire d'application
+	- Attribuer automatiquement un pseudo et un mot de passe (identique aux identifiants de la société, mot de passe modifiable par la suite)
 
+	- Permettre a l'utilisateur de gerer son profil (droit de modification des information: photo, mot de passe, Situation conjugale, ajout d'Enfants via un formulaire, addresse, téléphone)
+		
+	- Permettre a l'utilisateur de passe de membre à adhérent en payant la cotisation
 
-	Fonctions : 
-
-- Inscription automatique de tous les salariés en tant que membre ( Informations de base : Nom / Prénom )
-ou Remplissage du profil ( non automatique ) à la première connexion
-
-- Attribution d'identifiant et de mot de passe automatique
-
-- Connexion / Déconnexion ( ID / MDP )
-
-- Gestionnaire de profil ( Personnalisation )
-	- Ajout informations ( Nom / Prénom / Surnom / Adresse / Tel / Poste etc... ) 
-	- Photo
-	- Famille ( Formulaire d'ajout d'un membre de la famille ) 
-	- Modifications profil 
+	- Permettre a l'utilisateur de recevoir des newsletters dans une boite mail. 
 	
-- Passage de membre à adhérent ( Cotisation )
+	- Permettre a l'utilisateur de selectionner un ou plusieur mot cle pour rejoindre un ou plusieur groupe afin de recevoir les newsletters specifique au groupe
 
-- Boite mail ( news letters ) / messagerie instante / Information publiable / etc …
+	- Définir les droit d'accès des membre/adherent en fonction de leur poste/ role dans la société ( Administrateur / Gestionnaire / redacteur / Membre normal )
 
-- Base de donnée compte/profil
-	- Membre / Adhérent
-	- Situation adhérent ( attente / Cotisation  ) 
-	- Famille
-	- Photo
-	- Informations
+	- Permettre aux adherent d'acheter des billets de cine, musé, theatre...... à prix reduit (prestation commerciale)
+
+	- Permettre aux adherent de beneficer de diverse remise via une carte délivré au moment de l'adhesion
 	
-- Rejoindre groupe ( via Mot-clé dans une moteur de recherche ) 
+	-
+	
+	- Création de tutoriel / Bouton assistance contextuelle
 
-- Définition de droit d'accès à certaine informations et définition de la capacité de gestion ( Administrateur / Gestionnaire /Membre / Adhérent )
+	- Proposition de Mise à Jour
 
-- Mise en place de  Remises ( Informations reçues par mail / Attributions par achat )
-
-- Base de donnée employés
-	- État ( Membre / Attente / Adhérent )
-	- Interface graphique ( Limité en fonction de l'attribution )
-
-- Base de donnée réservations/paiements/cotisations
-
-- Création de tutoriel / Bouton assistance contextuelle
-
-- Proposition de Mise à Jour
-
-- Création d’événement ( en fonction des groupes / Général etc … )
+	- Création d’événement ( en fonction des groupes / Général etc … )
 
 
 Contraintes
 
-Contraintes techniques 
+	Contraintes techniques 
 	
-	Optimisation du temps de recherche dans la base de donnée ( MySQL )
-	Éviter le superflu 
-	Type de serveur ( Apache )
-	Volumétrie 
-	Formulaire de commande 
-	Fonctionner sur tous les supports ( OS / Navigateur Web ) 
+		Optimisation du temps de recherche dans la base de donnée ( MySQL )
+		Éviter le superflu 
+		Type de serveur ( Apache )
+		Volumétrie 
+		Formulaire de commande 
+		Fonctionner sur tous les supports ( OS / Navigateur Web ) 
 
-Contraintes de gestion : 
+	Contraintes de gestion : 
 
-	Administrateur : Peut avoir accès à tout et tout gérer. 
-	Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
-	Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
-	Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
+		Administrateur : Peut avoir accès à tout et tout gérer. 
+		Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
+		Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
+		Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
 
 
-Contraintes Organisationnelles : 
+	Contraintes Organisationnelles : 
 
-	Paramétrage : 
+		Paramétrage : 
 
-- L'administration doit pouvoir modifier les paramètres de l'application. 
-- Les membres et les adhérents doivent pouvoir faire des modifications sur leur propre profil.
-- Les gestionnaires doivent pouvoir modifier certains paramètres de l'application ( magasin / état membres etc... )
+			- L'administration doit pouvoir modifier les paramètres de l'application. 
+			- Les membres et les adhérents doivent pouvoir faire des modifications sur leur propre profil.
+			- Les gestionnaires doivent pouvoir modifier certains paramètres de l'application ( magasin / état membres etc... )
 
-	Maintenance : 
+		Maintenance : 
 
-- L'application doit proposer des mises à jour régulières pour palier aux éventuels bugs et problèmes. 
-//- Maintenance régulière des serveurs
-- Possibilité des membres / adhérents / gestionnaires de signaler des éventuels bugs et problèmes liés à l'application.
+			- L'application doit proposer des mises à jour régulières pour palier aux éventuels bugs et problèmes. 
+			//- Maintenance régulière des serveurs
+			- Possibilité des membres / adhérents / gestionnaires de signaler des éventuels bugs et problèmes liés à l'application.
 
 
 	Contraintes Financières :
 
-Respect du coût du projet : 
+		Respect du coût du projet : 
 	
-	Coût de la création de l'application
-	Coût de la mise en place de l'application
-	Coût de maintenance 
+			Coût de la création de l'application
+			Coût de la mise en place de l'application
+			Coût de maintenance 
 	
 
 BASE DE DONNEES 
