@@ -112,15 +112,17 @@ void matrice::multiplication(matrice B){}
 }*/
 void matrice::transposition()
 {
-    int tab;
-    for (int i = 0 ; i < taille ; i ++ )                    // Réalisation d'une transposition de matrice
+    int a;
+    lcv * tmp = tete;
+    a=tmp->li;
+    tmp->li=tmp->co;
+    tmp->co=a;
+    while(tmp->suiv!=NULL)
     {
-        for ( int j = i+1 ; j < taille ; j ++ )
-        {
-            tab = matrice[j][i];
-            matrice[j][i] = matrice[i][j];
-            matrice[i][j] = tab;
-        }
+     	tmp=tmp->suiv;
+        a=tmp->li;
+        tmp->li=tmp->co;
+      	tmp->co=a;
     }
 }
 
