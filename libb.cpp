@@ -110,7 +110,19 @@ void matrice::multiplication(matrice B){}
 	this->multiplication(this);
 	
 }*/
-void matrice::transposition(){}
+void matrice::transposition()
+{
+    int tab;
+    for (int i = 0 ; i < taille ; i ++ )                    // Réalisation d'une transposition de matrice
+    {
+        for ( int j = i+1 ; j < taille ; j ++ )
+        {
+            tab = matrice[j][i];
+            matrice[j][i] = matrice[i][j];
+            matrice[i][j] = tab;
+        }
+    }
+}
 
 
 void matrice::lecture(){}
