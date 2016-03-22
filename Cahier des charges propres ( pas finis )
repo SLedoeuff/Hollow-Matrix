@@ -1,0 +1,190 @@
+PROJET GENIE LOGICIEL
+
+
+
+
+
+
+
+
+
+CAHIER DES CHARGES
+REALISATION DE LOGICIEL DE MANIPULATION DE MATRICES CREUSES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nom du Groupe : Jacky
+
+Chef de projet : BASTIDE Anthony
+
+Adjoints : 
+DEMOGUE Bruno
+HUOT Amaury
+LEDOEUFF Sacha
+
+
+
+Adresse : CERI ( Centre d'Enseignement et de Recherche en Informatique ) Avignon
+
+Email : 
+
+anthony.bastide@alumni.univ-avignon.fr
+bruno.demogue@alumni.univ-avignon.fr
+amaury.huot@alumni.univ-avignon.fr
+sacha.ledoeuff@alumni.univ-avignon.fr
+
+Présentation du groupe : 
+
+
+	BASTIDE Anthony : 22 ans, chef de projet, mise en place du cahier des charges et définition des missions à attribuer aux adjoints. Aide et support pour le codage et algorithmique. Charger de la mise en place des méthodes de sauvegarde et charge des matrices creuses.
+
+	DEMOGUE Bruno : 21 ans, chargé de la programmation et de la mise en place des méthodes d'additions, de soustraction et de multiplication de matrice que l'ajout de valeur dans une matrice. Surcharge des opérateurs
+
+
+	HUOT Amaury : 20 ans chargé de la  programmation et de la mise en place des méthodes de transposition, aide pour l'ajout de valeur dans une matrice, affichage , fonction principal du logiciel. Surcharge des opérateurs
+
+
+	LEDOEUFF Sacha : 20 ans, chargé de la planification de l'organisation des tâches du projet et déterminer les délais pour réaliser  .Aide et support pour le codage et algorithmique. Charger de la mise en place des méthodes de sauvegarde et charge des matrices creuses.
+
+
+
+ Projets effectués : 
+
+	
+Présentation du projet 
+
+Attentes : 
+
+	L'objectif du projet est de mettre un place et créer un logiciel capable de réaliser différentes manipulations sur des Matrices Creuses via différentes opérations matricielles élémentaires , des opérations de sortie et d'entrée. 
+
+	Matrice Creuse : Classiquement une Matrice creuse est une matrice dans laquelle se trouve beaucoup de zéro . De manière conceptuelle, une matrice creuse correspond à un système qui sont peu couplés. C'est-à-dire que si on considère une ligne de balles dont chacune est reliée à ses voisins directes par des élastiques on pourrait représenter ce système par une matrice creuse. 
+
+	Exemple de matrice creuse  : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contexte : 
+
+	Le projet de création d'un logiciel pouvant manipuler des matrices creuses fait parti du cours de Génie Logiciel de M.FERREIRA Emmanuel. Ce projet est à réalisé en parti durant les TP  du cours dont la surveillance est faite par M.TORRES-MORENO Juan-Manuel. Un travail personnel en dehors du cadre des TP est également à fournir par les membres de l'équipe. 
+
+
+Comité de pilotage 
+
+	Durant ce projet, les différentes étapes seront séparées entre chaque membre de l'équipe. Chacun des membres de l'équipe devra réaliser une étape mais les autres membres de l'équipe peuvent l'épauler en cas de besoin et inversement. De plus chacun des membres de l'équipe devra se tenir au courant du contenu des étapes que les autres auront réalisé. 
+
+	Concernant le processus de validation des étapes, lorsqu'un membre de l'équipe aura terminé son travail il le partagera avec les autres membres de l'équipe et la validation se fera lorsque tous les membres de l'équipe seront tenus au courant et auront validé l'étape. Pour se faire des réunions hebdomadaires seront tenues concernant l'avancée du projet. 
+
+	La validation d'une étape de programmation se fera uniquement lors que la phase de test se terminera. La phase de test consistera à tester ce que l'un des membre de l'équipe aura fourni pour éviter et prévoir la plus-part des bugs et éventuel problèmes qui peuvent survenir. 
+
+	Une documentation sera fournie dans le code, pour une meilleure compréhension des fonctions, des variables, etc … qui seront utilisés durant ce projet. De plus un document supplémentaire concernant les spécifications techniques détaillées sera également fournis. 
+
+Objectifs
+
+	Manipulations à réaliser sur les matrices : 
+
+Opérations matricielles élémentaires : 
+
+- Addition
+- Différence ( Soustraction )
+- Multiplication
+- Transposition
+
+Opérations entrées et sorties : 
+
+- Entrée :
+	→ Lecture d'une matrice à partir d'un fichier.
+	→ Création d'une matrice creuse par l'utilisateur directement.
+
+- Sorties :
+	→ Affichage de la matrice de base 
+	→ Affichage après les modifications apportées avec les opérations. 
+
+Charte Graphiques : 
+
+	Le logiciel se sera présenté sous forme d'une application simple en ligne de commande. 
+
+	Comment sera visuellement l'application : 
+
+Le logiciel se présentera sous forme de terminal dans lequel l'utilisateur devra entrer les commandes qui correspondront aux opérations créés pour le logiciel. Ainsi, l'utilisateur pourra faire des additions de matrice creuse ou des soustractions etc... Un guide sera accessible pour l'utilisateur pour utiliser les différentes fonctions. 
+
+
+
+Contenus
+
+Fonctionnalités : 
+
+	Dans cette application se trouveront les différentes opérations matricielles à savoir l'addition de matrice, la soustraction de matrice, la multiplication et la transposition de matrice. Mais également des opérations d'entrées c'est à dire charger une matrice qui a été sauvegardé i l'utilisateur le souhaite  et des opérations de sorties c'est à dire sauvegarder une matrice si l'utilisateur le souhaite .  	
+
+Description des fonctionnalités : 
+ 
+	- Addition : L'addition de matrice permet de réaliser une opération mathématique qui consiste à produire une matrice qui est le résultat de l'addition de deux matrices du même type. 
+
+	Exemple :
+
+	
+	
+	IMAGE
+
+
+
+
+	- Multiplication : La multiplication de matrice ou produit matriciel permet de réaliser une opération mathématique qui consiste à réaliser la somme des produits des lignes d'une matrice A et des colonnes d'une matrice B. 
+
+	Exemple 
+
+  IMAGE
+
+	- Soustraction : De manière similaire à l'addition la soustraction de matrice permet de fare la différence ente deux matrices du même type et de même taille.
+
+	Exemple : 
+
+ 
+	Transposition : La transposition de matrice consiste à faire une inversion des lignes et des colonnes d'une matrice. 
+
+	Exemple : 
+
+
+
+  IMAGE
+
+
+
+
+
+Langues :
+
+Langue Français sur toutes l’application
+/ Anglais ?
+
+Budget
+
+ 1 cookie pour chaque membre de l'équipe
