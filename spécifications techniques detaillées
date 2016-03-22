@@ -1,0 +1,14 @@
+Ce programme permet de :
+-Effectuer l'addition de deux matrices creuses grâce a la fonction addition qui prend en parametre la matrice a sommer avec la matrice invoquant la méthode
+-Effectuer une multiplication entre deux matrices creuses grâce à la fonction multiplication  qui prend en paramere une matrice et la matrice invoquant la méthodes , pour se faire la matrice 1 doit avoir le même nb de ligne que de colonne de la matrice 2
+-Effectuer la transposé d'une matrice creuse grâce a la fonction transposition qui ne prend aucun parametre.
+-Effectuer l'ajout d'une valeur dans la matrice creuse(grace a la modélisation lcv**)
+-Effectuer une sauvegarde et le chargement d'une matrice creuse grace a/a partir (d')un fichier texte
+-Effectuer l'affichage d'une matrice creuse(sans argument)
+Le tout sera proposé sous forme d'application terminale ou l'utilisateur pourra rentré les instructions comme il le souhaite.
+
+
+
+**
+La notation LCV (Ligne Colonne Valeur) permet d'arranger une matrice creuse dans une liste chainées en ne nottant pas les 0 présent dans la matrice mais en ne garrdant que les valeurs présentes en les stockant de maniere a les repérer grace a leur numero de ligne/colonne et la valeur de cette case
+ce qui permet en somme un gain de temps exceptionnel quant au traitement des tâches/opérations à effectuer sur ces matrices creuses
