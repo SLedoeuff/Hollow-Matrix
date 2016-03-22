@@ -30,16 +30,19 @@ class matrice
 {
 	private:
 		string name;
+		int largeur;
+		int hauteur;
 		lcv *tete;
 
 	public:
-		matrice(string);
-		void ajout(int,int,int,string);
+		matrice(string,int,int);
+		void action(int,int,int,string);
+		void ajout(int,int,int);
 		void affiche();
 		void addition(matrice);
 		void soustraction(matrice);
-		void multiplication(matrice);
-		//void carre();
+		matrice multiplication(matrice);
+		matrice carre();
 		void transposition();
 
 
