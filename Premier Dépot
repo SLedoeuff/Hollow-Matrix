@@ -17,7 +17,7 @@ Contexte :
 		- Proposer une garantie et une maintenance de l'application
 		- Proposer des moyen de prise en charge par la DSI
 	proposition organisationelle
-		- Moyens organisationnels techniques pour l’installation, gestion administration 
+		- Fournir les moyens organisationnels techniques pour l’installation, gestion administration 
 		- Proposer les moyen nécessaire a la formation des utilisateur et des futurs formateurs
 
 
@@ -50,24 +50,22 @@ Fonctionnalités :
 
 Contraintes
 
-	Contraintes techniques 
+	-Respecter les contraintes techniques 
 	
-		Optimisation du temps de recherche dans la base de donnée ( MySQL )
-		Éviter le superflu 
-		Type de serveur ( Apache )
-		Volumétrie 
-		Formulaire de commande 
-		Fonctionner sur tous les supports ( OS / Navigateur Web ) 
+		-Optimiser le temp de recherche dans les bdd en MySQL
+		-utiliser des serveur de type apache de taille adapté au besoin du client
+		-Créer des formulaires de commande 
+		-Permettre a l'application de fonctionner sur tous les os ainsi que tout les navigateurs web 
 
-	Contraintes de gestion : 
+	-Respecter les contraintes de gestion : 
 
-		Administrateur : Peut avoir accès à tout et tout gérer. 
-		Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
-		Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
-		Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
+		-Administrateur : Peut avoir accès à tout et tout gérer. 
+		-Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
+		-Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
+		-Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
 
 
-	Contraintes Organisationnelles : 
+	-Respecter les contraintes Organisationnelles : 
 
 		Paramétrage : 
 
@@ -77,18 +75,15 @@ Contraintes
 
 		Maintenance : 
 
-			- L'application doit proposer des mises à jour régulières pour palier aux éventuels bugs et problèmes. 
-			//- Maintenance régulière des serveurs
-			- Possibilité des membres / adhérents / gestionnaires de signaler des éventuels bugs et problèmes liés à l'application.
+			- proposer des mise a jour régulières pour palier aux éventuels bugs et problèmes. 
+			- Permettre aux differents membres de signaler des éventuels bugs et problèmes liés à l'application.
 
 
-	Contraintes Financières :
+	-Respecter les contraintes Financières :
 
-		Respect du coût du projet : 
-	
-			Coût de la création de l'application
-			Coût de la mise en place de l'application
-			Coût de maintenance 
+			-Respect du coût de la création de l'application
+			-Respect du coût de la mise en place de l'application
+			-Respect du coût de maintenance 
 	
 
 BASE DE DONNEES 
@@ -126,10 +121,3 @@ BDD Famille :
 	→ prénom de l'employé 
 	→ statut ( conjoint / mari / femme / enfant ) 
 	
-
-
-
-
-
-
-REFORMULATION !!!!!!!!!
