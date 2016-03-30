@@ -52,9 +52,9 @@ Fonctionnalités :
 		- presenter divers article contenant des "bon plan" : comercant, baby-sitter, etc
 		
 	- créer un menu "partenaire"
-		- proposer ladhesion aux simple membres
-		- rediger des offrs ( redacteur et gestionnaire uniquement )
-		- poster des offres ( gestionnaire uniquement 
+		- proposer l'adhesion aux simple membres
+		- rediger des offres ( redacteur et gestionnaire uniquement )
+		- poster des offres ( gestionnaire uniquement )
 		- gerer dynamiquement lordre des offres affichant en prioriter celle qui expirent en premiers ou celle ou ils restent peu de place
 		- classer les offres
 		- proposer linscription a la newsletters des partenaires aux non inscrit a la dites newsletters
@@ -142,5 +142,5 @@ BASE DE DONNEES
 		→ référence de l'objet 
 		→ magasin 
 		→ prix 
-		→ état ( a acheté / commander / reçu )
+		→ état ( acheté / commander / reçu )
 		→ payer ( oui/non ) 
