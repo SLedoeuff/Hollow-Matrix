@@ -57,15 +57,21 @@ Fonctionnalités :
 		- poster des offres ( gestionnaire uniquement 
 		- gerer dynamiquement lordre des offres affichant en prioriter celle qui expirent en premiers ou celle ou ils restent peu de place
 		- classer les offres
-
+		- proposer linscription a la newsletters des partenaires aux non inscrit a la dites newsletters
+	- créer des newsletters automatique (la liste des nouveaux articles aux adherent inscrit a la newsletters du magasin)
+	
 Contraintes
 
 	-Respecter les contraintes techniques 
-		-Optimiser le temp de recherche dans les bdd en MySQL
-		-utiliser des serveur de type apache de taille adapté au besoin du client
-		-Créer des formulaires de commande 
-		-Permettre a l'application de fonctionner sur tous les os ainsi que tout les navigateurs web 
-		-permettre diverse methode de payment pour l'acce adherent (cb, virement, cheque)
+		- Optimiser le temp de recherche dans les bdd en MySQL
+		- utiliser des serveur de type apache de taille adapté au besoin du client
+		- Créer des formulaires de commande 
+		- Permettre a l'application de fonctionner sur tous les os ainsi que tout les navigateurs web 
+		- permettre diverse methode de payment pour l'acce adherent (cb, virement, cheque)
+		- créer des sauvegardes
+			- sauvegarder a chaque ajout d'articles (sauvegardes de type incrementable)
+			- conserver les sauvegardes des dix derniers jours, une sauvegarde par semaien sur les deux derniers moi,une sauvegarde par moi au dela de 3 moi
+			- 
 
 	-Respecter les contraintes de gestion : 
 		-Membre: 
@@ -77,11 +83,12 @@ Contraintes
 		-Adhérent: 
 			-accéder aux fonctionnalités de reservation ,aux reductions, et a la billeterie.
 		-redacteur: 
-			-envoyer des publications aux gestionaires.
+			-rediger du contenue.
 		-Gestionnaire: 
-			-accéder aux fonctionnalités de gestion du site.
+			-modifier et publier les articles des redacteurs.
 		-Administrateur : 
-			-accéder au paramettre et reglage de l'aplication.
+			-accéder aux paramettre et reglage de l'aplication.
+			-accéder aux information recolté.
 
 
 	-Respecter les contraintes Organisationnelles : 
@@ -100,7 +107,7 @@ Contraintes
 			-Respecter le coût de la mise en place de l'application
 			-Respecter le coût de maintenance 
 	
-
+	- Respecter les lois en vigueurs dans le pays du client 
 BASE DE DONNEES 
 	BDD Profil : 
 		→ nom 
