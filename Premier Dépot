@@ -11,11 +11,13 @@ Contexte :
 
 - Nom : MOGOUAILLE
 - Prestation demandée :
+
 	proposition technique
 		- Créer une application capable de gérer les activités du CAS 
 		- Gérer et permettre la mise en œuvre de la recette de l'application par la DSI
 		- Proposer une garantie et une maintenance de l'application
 		- Proposer des moyen de prise en charge par la DSI
+		
 	proposition organisationelle
 		- Fournir les moyens organisationnels techniques pour l’installation, gestion administration 
 		- Proposer les moyen nécessaire a la formation des utilisateur et des futurs formateurs
@@ -24,34 +26,22 @@ Contexte :
 Fonctionnalités : 
 
 	- Inscrire automatiquement tous les salariés en tant que membre ( Informations de base : Nom / Prénom ) avec remplissage manuel du reste du profil à la première connexion
-
 	- Attribuer automatiquement un pseudo et un mot de passe (identique aux identifiants de la société, mot de passe modifiable par la suite)
-
 	- Permettre a l'utilisateur de gerer son profil (droit de modification des information: photo, mot de passe, Situation conjugale, ajout d'Enfants via un formulaire, addresse, téléphone)
-		
 	- Permettre a l'utilisateur de passer de membre à adhérent en payant la cotisation
-
 	- Permettre a l'utilisateur de recevoir des newsletters dans une boite mail. 
-	
 	- Permettre a l'utilisateur de selectionner un ou plusieur mot cle pour rejoindre un ou plusieur groupe afin de recevoir les newsletters specifique au groupe
-
 	- Définir les droit d'accès des membre/adherent en fonction de leur poste/ role dans la société ( Administrateur / Gestionnaire / redacteur / Membre normal )
-
 	- Permettre aux adherents d'acheter des billets de cine, musé, theatre...... à prix reduit (prestation commerciale)
-
 	- Permettre aux adherents de beneficer de diverse remise via une carte délivré au moment de l'adhesion
-	
 	- Permettre aux adherents de passer commande ( le CAS jouant alors le role d'intermediaire pour obtenir des reduction en tant que client unique pour obtenir des reduction)
-
 	- Permettre la mise a jour automatique du logiciel 
-	
 	- Permettre de creer des evenement general ou en fonction des groupe 
 
 
 Contraintes
 
 	-Respecter les contraintes techniques 
-	
 		-Optimiser le temp de recherche dans les bdd en MySQL
 		-utiliser des serveur de type apache de taille adapté au besoin du client
 		-Créer des formulaires de commande 
@@ -59,7 +49,6 @@ Contraintes
 		-permettre diverse methode de payment pour l'acce adherent (cb, virement, cheque)
 
 	-Respecter les contraintes de gestion : 
-
 		-Membre: 
 			-accéder à la gestion de profil,
 			-s'inscrire aux groupe de newletters, 
@@ -77,58 +66,51 @@ Contraintes
 
 
 	-Respecter les contraintes Organisationnelles : 
-
 		Paramétrage : 
- 
 			- autoriser chaque membre a modifer son profils.
 			- gerer les diverse fonction de l'appli (gestionaire uniquement).
 			- modifier les paramètres de l'application (admin uniquement).
 
 		Maintenance : 
-
 			- proposer des mise a jour régulières pour palier aux éventuels bugs et problèmes. 
 			- Permettre aux differents membres de signaler des éventuels bugs et problèmes liés à l'application.
 
 
 	-Respecter les contraintes Financières :
-
 			-Respecter le coût de la création de l'application
 			-Respecter le coût de la mise en place de l'application
 			-Respecter le coût de maintenance 
 	
 
 BASE DE DONNEES 
+	BDD Profil : 
+		→ nom 
+		→ prénom 
+		→ photo
+		→ mot de passe 
+		→ date de naissance 
+		→ Situation conjugale
+		→ Enfants (nombre)
+		→ adresse
+		→ téléphone
+		→ poste 
+		→ état ( membre / attente / adhérant )
+		→ Statut ( Administrateur / Gestionnaire / Redacteur / Simple ) 
+		→ Commentaire 
 
-BDD Profil : 
-	→ nom 
-	→ prénom 
-	→ photo
-	→ mot de passe 
-	→ date de naissance 
-	→ Situation conjugale
-	→ Enfants ( oui / non / nombre )
-	→ adresse
-	→ téléphone
-	→ poste 
-	→ état ( membre/attente / adhérant )
-	→ Droit ( Administrateur / Gestionnaire / Membre / Adhérent ) 
-	→ Statut ( Redacteur / president )
-	→ Commentaire 
-
-BDD Réservation : 
-	→ nom 
-	→ prénom 
-	→ référence de l'objet 
-	→ magasin 
-	→ prix 
-	→ état ( a acheté / commander / reçu )
-	→ payer ( oui/non ) 
-
-BDD Famille : 
-	→ nom 
-	→ prénom 
-	→ date de naissance 
-	→ nom de l'employé
-	→ prénom de l'employé 
-	→ statut ( conjoint / mari / femme / enfant ) 
+	BDD Famille : 
+		→ nom 
+		→ prénom 
+		→ date de naissance 
+		→ nom de l'employé
+		→ prénom de l'employé 
+		→ statut ( conjoint / mari / femme / enfant ) 
 	
+	BDD Réservation : 
+		→ nom 
+		→ prénom 
+		→ référence de l'objet 
+		→ magasin 
+		→ prix 
+		→ état ( a acheté / commander / reçu )
+		→ payer ( oui/non ) 
