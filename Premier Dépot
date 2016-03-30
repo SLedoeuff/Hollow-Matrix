@@ -20,7 +20,6 @@ Contexte:
 		- Fournir les moyens organisationnels techniques pour l’installation, gestion administration 
 		- Proposer les moyen nécessaire a la formation des utilisateur et des futurs formateurs
 
-
 Fonctionnalités : 
 	- Inscrire automatiquement tous les salariés en tant que membre ( Informations de base : Nom / Prénom ) avec remplissage manuel du reste du profil à la première connexion
 	- Attribuer automatiquement un pseudo et un mot de passe (identique aux identifiants de la société, mot de passe modifiable par la suite)
@@ -38,6 +37,7 @@ Fonctionnalités :
 		- presenter l'association
 		- presenter l'équipe du conseil d'administration
 		- presenter les membres du bureau
+		- acceder au formulaire d'adesion 
 		
 	- créer un menu des manifestation
 		- l'organiser sous forme de timeline verticale
@@ -46,7 +46,7 @@ Fonctionnalités :
 			- resumé de 2-3 lignes
 			- liens vers plus de details
 				- description detaillé de la manifestation
-				- formùulaire d'inscription
+				- formulaire d'inscription
 				
 	- créer un menu des information utile
 		- presenter divers article contenant des "bon plan" : comercant, baby-sitter, etc
@@ -78,7 +78,7 @@ Contraintes
 			- s'inscrire aux groupe de newletters, 
 			- consulter les profils des autres, 
 			- participer au evenement anuel, 
-			- recevoir un cheque cadeau a la naissance d'un enfant entre septembre et decembre pour compenser labscence de cadeau  . 
+			- recevoir un cheque cadeau a la naissance d'un enfant entre septembre et decembre pour compenser l'abscence de cadeau  . 
 			
 		- Adhérent: 
 			- accéder aux fonctionnalités de reservation ,aux reductions, et a la billeterie.
@@ -110,7 +110,6 @@ Contraintes
 			- Respecter le coût de maintenance 
 	
 	- Respecter les lois en vigueurs dans le pays du client 
-	
 	
 BASE DE DONNEES 
 	BDD Profil: 
