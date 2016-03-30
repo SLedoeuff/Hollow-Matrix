@@ -56,22 +56,33 @@ Contraintes
 		-utiliser des serveur de type apache de taille adapté au besoin du client
 		-Créer des formulaires de commande 
 		-Permettre a l'application de fonctionner sur tous les os ainsi que tout les navigateurs web 
+		-permettre diverse methode de payment pour l'acce adherent (cb, virement, cheque)
 
 	-Respecter les contraintes de gestion : 
 
-		-Administrateur : Peut avoir accès à tout et tout gérer. 
-		-Membre et Adhérent : peut accéder aux fonctionnalités de l'application ( Magasin, gestion de profil ) mais accès limités aux autres partie de l'application. 
-		-Membre : peut accéder à la gestion de profil mais peut simplement voir le reste du site sans pouvoir interagir avec. 
-		-Gestionnaire : peut accéder aux fonctionnalités du site avec une plus grande vue et avoir la main sur une grande partie site ( gestion magasin / gestion membre/adhérant limitée ) 
+		-Membre: 
+			-accéder à la gestion de profil,
+			-s'inscrire aux groupe de newletters, 
+			-consulter les profils des autres, 
+			-participer au evenement anuel, 
+			-recevoir un cheque cadeau a la naissance d'un enfant entre septembre et decembre pour compenser labscence de cadeau  . 
+		-Adhérent: 
+			-accéder aux fonctionnalités de reservation ,aux reductions, et a la billeterie.
+		-redacteur: 
+			-envoyer des publications aux gestionaires.
+		-Gestionnaire: 
+			-accéder aux fonctionnalités de gestion du site.
+		-Administrateur : 
+			-accéder au paramettre et reglage de l'aplication.
 
 
 	-Respecter les contraintes Organisationnelles : 
 
 		Paramétrage : 
-
-			- L'administration doit pouvoir modifier les paramètres de l'application. 
-			- Les membres et les adhérents doivent pouvoir faire des modifications sur leur propre profil.
-			- Les gestionnaires doivent pouvoir modifier certains paramètres de l'application ( magasin / état membres etc... )
+ 
+			- autoriser chaque membre a modifer son profils.
+			- gerer les diverse fonction de l'appli (gestionaire uniquement).
+			- modifier les paramètres de l'application (admin uniquement).
 
 		Maintenance : 
 
