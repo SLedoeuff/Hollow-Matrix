@@ -37,7 +37,26 @@ Fonctionnalités :
 	- Permettre aux adherents de passer commande ( le CAS jouant alors le role d'intermediaire pour obtenir des reduction en tant que client unique pour obtenir des reduction)
 	- Permettre la mise a jour automatique du logiciel 
 	- Permettre de creer des evenement general ou en fonction des groupe 
-
+	- créer un menu de presentation
+		- presenter l'association
+		- presenter l'équipe du conseil d'administration
+		- presenter les membres du bureau
+	- créer un menu des manifestation
+		- l'organiser sous forme de timeline verticale
+		- presenter rapidement les manifestation 
+			- photo
+			- resumé de 2-3 lignes
+			- liens vers plus de details
+				- description detaillé de la manifestation
+				- formùulaire d'inscription
+	- créer un menu des information utile
+		- presenter divers article contenant des "bon plan" : comercant, baby-sitter, etc
+	- créer un menu "partenaire"
+		- proposer ladhesion aux simple membres
+		- rediger des offrs ( redacteur et gestionnaire uniquement )
+		- poster des offres ( gestionnaire uniquement 
+		- gerer dynamiquement lordre des offres affichant en prioriter celle qui expirent en premiers ou celle ou ils restent peu de place
+		- classer les offres
 
 Contraintes
 
