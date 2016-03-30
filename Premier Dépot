@@ -5,11 +5,11 @@ LEDOEUFF Sacha (le charlot)
 DEMOGUE Bruno (kami sama)
 HUOT Amaury (le branlot)
 
-Contexte : 
-	Profil de l'entreprise : 
+Contexte: 
+	Profil de l'entreprise: 
 
-- Nom : MOGOUAILLE
-- Prestation demandée :
+- Nom: MOGOUAILLE
+- Prestation demandée:
 	proposition technique
 		- Créer une application capable de gérer les activités du CAS 
 		- Gérer et permettre la mise en œuvre de la recette de l'application par la DSI
@@ -62,7 +62,7 @@ Fonctionnalités :
 	- créer des newsletters automatique (la liste des nouveaux articles aux adherent inscrit a la newsletters du magasin)
 	
 Contraintes
-	-Respecter les contraintes techniques 
+	- Respecter les contraintes techniques 
 		- Optimiser le temp de recherche dans les bdd en MySQL
 		- utiliser des serveur de type apache de taille adapté au besoin du client
 		- Créer des formulaires de commande 
@@ -72,48 +72,48 @@ Contraintes
 			- sauvegarder a chaque ajout d'articles (sauvegardes de type incrementable)
 			- conserver les sauvegardes des dix derniers jours, une sauvegarde par semaien sur les deux derniers moi,une sauvegarde par moi au dela de 3 moi
 
-	-Respecter les contraintes de gestion : 
-		-Membre: 
-			-accéder à la gestion de profil,
-			-s'inscrire aux groupe de newletters, 
-			-consulter les profils des autres, 
-			-participer au evenement anuel, 
-			-recevoir un cheque cadeau a la naissance d'un enfant entre septembre et decembre pour compenser labscence de cadeau  . 
+	- Respecter les contraintes de gestion : 
+		- Membre: 
+			- accéder à la gestion de profil,
+			- s'inscrire aux groupe de newletters, 
+			- consulter les profils des autres, 
+			- participer au evenement anuel, 
+			- recevoir un cheque cadeau a la naissance d'un enfant entre septembre et decembre pour compenser labscence de cadeau  . 
 			
-		-Adhérent: 
-			-accéder aux fonctionnalités de reservation ,aux reductions, et a la billeterie.
+		- Adhérent: 
+			- accéder aux fonctionnalités de reservation ,aux reductions, et a la billeterie.
 			
-		-redacteur: 
-			-rediger du contenue.
+		- redacteur: 
+			- rediger du contenue.
 			
-		-Gestionnaire: 
-			-modifier et publier les articles des redacteurs.
+		- Gestionnaire: 
+			- modifier et publier les articles des redacteurs.
 			
-		-Administrateur : 
-			-accéder aux paramettre et reglage de l'aplication.
-			-accéder aux information recolté.
+		- Administrateur : 
+			- accéder aux paramettre et reglage de l'aplication.
+			- accéder aux information recolté.
 			
-	-Respecter les contraintes Organisationnelles : 
-		Paramétrage : 
+	- Respecter les contraintes Organisationnelles : 
+		- Paramétrage : 
 			- autoriser chaque membre a modifer son profils.
 			- gerer les diverse fonction de l'appli (gestionaire uniquement).
 			- modifier les paramètres de l'application (admin uniquement).
 			
-		Maintenance : 
+		- Maintenance : 
 			- proposer des mise a jour régulières pour palier aux éventuels bugs et problèmes. 
 			- Permettre aux differents membres de signaler des éventuels bugs et problèmes liés à l'application.
 
 
-	-Respecter les contraintes Financières :
-			-Respecter le coût de la création de l'application
-			-Respecter le coût de la mise en place de l'application
-			-Respecter le coût de maintenance 
+	- Respecter les contraintes Financières :
+			- Respecter le coût de la création de l'application
+			- Respecter le coût de la mise en place de l'application
+			- Respecter le coût de maintenance 
 	
 	- Respecter les lois en vigueurs dans le pays du client 
 	
 	
 BASE DE DONNEES 
-	BDD Profil : 
+	BDD Profil: 
 		→ nom 
 		→ prénom 
 		→ photo
@@ -128,7 +128,7 @@ BASE DE DONNEES
 		→ Statut ( Administrateur / Gestionnaire / Redacteur / Simple ) 
 		→ Commentaire 
 
-	BDD Famille : 
+	BDD Famille: 
 		→ nom 
 		→ prénom 
 		→ date de naissance 
@@ -136,7 +136,7 @@ BASE DE DONNEES
 		→ prénom de l'employé 
 		→ statut ( conjoint / mari / femme / enfant ) 
 	
-	BDD Réservation : 
+	BDD Réservation: 
 		→ nom 
 		→ prénom 
 		→ référence de l'objet 
