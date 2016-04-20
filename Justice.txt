@@ -1,0 +1,10 @@
+-respect du contrat en terme de date de livraison(respect du calendrier)-> en cas de retard = pénalité
+-respect du contrat en terme de devis et de frais-> résiliation si supérieur a 20% plus cher
+-respect des demandes faites dans le contrat , au quel cas , le contras pourra être "rompu"
+-en cas de faillite de la boite delivrant le produit , toute ou partie des codes sources pourront être recupéré au près de l'INPI
+-en cas de non respect de l'un de ces points , une plainte pourra être desposée
+-une fois le produit livré les maintenances doivent être effectué comme convenus par le prestataire, le cas contraire une plainte pourra  être déposée
+-
+
+En effet, l’article L442-6 du Code de commerce énonce qu’« Engage la responsabilité de son auteur et l'oblige à réparer le préjudice causé le fait, par tout producteur, commerçant, industriel ou personne immatriculée au répertoire des métiers 
+[...]De rompre brutalement, même partiellement, une relation commerciale établie, sans préavis écrit tenant compte de la durée de la relation commerciale et respectant la durée minimale de préavis déterminée, en référence aux usages du commerce, par des accords interprofessionnels »
