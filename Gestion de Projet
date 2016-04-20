@@ -13,78 +13,66 @@ Comité de pilotage :
 
 Fréquence des réunions :
 
-Mise au point concernant le travail fait et à faire ( Bilan ) : toutes les semaines ( 1 heure )
-Présentation du projet : tous les mois ( 30 minutes )
+Mise au point concernant le travail fait et à faire ( Bilan ) : toutes les semaines ( 1 heure )Présentation du projet : tous les mois ( 30 minutes )
 Réunion de debriefing avec le client : tous les mois ( 2 heures ) 
 
 Planification travail : 
 
 Développement du projet : 2 jours et demi / semaine
-
-
-Planification : 
-
-Mois 1 :
-	Semaine 1 : Lecture et compréhension de l'appel d'offre ( Besoins/Fonctionnalités/Contraintes )
-	Semaine 2 : Mise en place des fonctionnalités
-	Semaine 3 : Création d'une maquette / Bilan
-	Semaine 4 : Présentation de la maquette / Réunion pour définir les problèmes / Bilan
-Mois 2 :
-	Semaine 5 : Modifications de la maquette / Bilan
-	Semaine 6 : Améliorations / Bilan
-	Semaine 7 : Présentation de la deuxième maquette / Réunion pour définir les problèmes / Bilan
-
-Mois 3 :
-	Semaine 8 : Modifications de la maquette / Bilan
-	Semaine 9 : Améliorations / Bilan
-	Semaine 10 : Présentation de la troisième maquette / Réunion pour définir les problèmes / Bilan
-
-Mois 4 : 
-	Semaine 11 : Finalisation de la maquette / Bilan
-	Semaine 12 : Dernière présentation / Début du déploiement
-
-
-
+Formations : 4 jours 
+Formations administrateur : 1 jour
+Formations employés : ½ journée
 
 
 Organisation de notre travail :
 
-	Dans un premier temps, le chef de projet et l'équipe définiront le contexte, en prenant connaissance du nom de l'entreprise qui a rédigé l'appel d'offre, ses spécificités, son domaine de travail etc... Ensuite le chef de projet qui sera le porte parole unique de l'équipe. Il fera la navette entre l'équipe et l'entreprise. Il prendra connaissance de l'appel d'offre et discutera avec le futur client pour qu'il présente ses besoins. Ensuite le chef de projet partagera l'appel d'offre avec l'équipe pour que chaque membre de l'équipe prenne connaissance des besoins du futur client. Une réunion de l'équipe sera faite pour comprendre et bien définir les besoins attendus dans l'appel d'offre de manière à répondre le mieux possible aux besoins du client.
+	Dans un premier temps, le chef de projet et l'équipe définiront le contexte, en prenant connaissance du nom 
+	de l'entreprise qui a rédigé l'appel d'offre, ses spécificités, son domaine de travail etc... Ensuite le chef de 
+	projet qui sera le porte parole unique de l'équipe. Il fera la navette entre l'équipe et l'entreprise. Il prendra 
+	connaissance de l'appel d'offre et discutera avec le futur client pour qu'il présente ses besoins. Ensuite le chef 
+	de projet partagera l'appel d'offre avec l'équipe pour que chaque membre de l'équipe prenne connaissance des besoins 
+	du futur client. Une réunion de l'équipe sera faite pour comprendre et bien définir les besoins attendus dans l'appel 
+	d'offre de manière à répondre le mieux possible aux besoins du client.
 
-	Dans un second temps, le chef de projet proposera à son équipe une définition des fonctionnalités et des contraintes liées à l'application et à sa mise en place. Une réunion sera organisée pour déterminer l'attribution des différentes tâches à réaliser en fonction des fonctionnalités et des contraintes, pour chaque membre de l'équipe en faisant attention à ce que la charge de travail bien réparti entre chaque membre de l'équipe. Cette partie concernera le chef de projet de même que la planification des tâches et des délais à respecter. 
+	Dans un second temps, le chef de projet proposera à son équipe une définition des fonctionnalités et des contraintes 
+	liées à l'application et à sa mise en place. Une réunion sera organisée pour déterminer l'attribution des différentes
+	tâches à réaliser en fonction des fonctionnalités et des contraintes, pour chaque membre de l'équipe en faisant
+	attention à ce que la charge de travail bien réparti entre chaque membre de l'équipe. Cette partie concernera le chef 
+	de projet de même que la planification des tâches et des délais à respecter. 
 
-	Suite à cela, le travail commencera et une mise au point de l'avancement du travail sera faite en réunion avec l'équipe toutes les semaines. Ces mises au point auront lieu jusqu'à la création de la maquette soit 3 semaines après le début du travail et une semaine de travail sera consacré à la mise en place de cette maquette. 
+	Suite à cela, le travail commencera et une mise au point de l'avancement du travail sera faite en réunion avec l'équipe 
+	toutes les semaines. Ces mises au point auront lieu jusqu'à la création de la maquette soit 3 semaines après le début 
+	du travail et une semaine de travail sera consacré à la mise en place de cette maquette. 
 
-	Cette phase se renouvellera tous les mois jusqu'à la fin du projet et que tous les besoins du client soient satisfaits ou que le délai soit terminé. Dans le cas, où le client est satisfait la phase de déploiement et de vente commencera. Dans cette phase, l'équipe mettra en place un système d'aide contextuel qui permettront aux utilisateurs de se familiariser et comprendre plus facilement l'application. De plus une formation obligatoire sera mise en place pour les membres du bureau pour qu'il puisse connaître toutes les fonctionnalités de l'application et maîtriser l'application.
+	Cette phase se renouvellera tous les mois jusqu'à la fin du projet et que tous les besoins du client soient satisfaits
+	ou que le délai soit terminé. Dans le cas, où le client est satisfait la phase de déploiement et de vente commencera.
+	Dans cette phase, l'équipe mettra en place un système d'aide contextuel qui permettront aux utilisateurs de se 
+	familiariser et comprendre plus facilement l'application. De plus une formation obligatoire sera mise en place pour les
+	membres du bureau pour qu'il puisse connaître toutes les fonctionnalités de l'application et maîtriser l'application.
 
 Organisation du travail du client :
 
-	Tous les mois une soutenance et une présentation détaillée de la maquette au client sera faite, la première présentation se fera 1 mois après la signature du contrat. Une réunion entre le chef de projet et le client sera organisée après la première présentation du travail accompli pour définir les problèmes et les solutions mettre à place pour que l'application soit à sa convenance et pour qu'il puisse travailler dans les meilleurs conditions. De plus, le chef de projet pourra proposer au client un ajout de fonctionnalités esthétiques, fonctionnels, organisationnels etc... 
+	Tous les mois une soutenance et une présentation détaillée de la maquette au client sera faite, la première présentation
+	se fera 1 mois après la signature du contrat. Une réunion entre le chef de projet et le client sera organisée après la 
+	première présentation du travail accompli pour définir les problèmes et les solutions mettre à place pour que 
+	l'application soit à sa convenance et pour qu'il puisse travailler dans les meilleurs conditions. De plus, le chef de 
+	projet pourra proposer au client un ajout de fonctionnalités esthétiques, fonctionnels, organisationnels etc... 
 
 	 
 
 Tâches résumées : 
 
-- Définition du contexte
-- Prise de connaissance des besoins du client ( via l'appel d'offre )
-- Compréhension des besoins
-- Définition des besoins
-- Mise au point avec l'équipe
-- Définition des fonctionnalités
-- Mise au point avec l'équipe
-- Définition des contraintes
-- Mise au point avec l'équipe
-- Gestion de projet
-- Mise au point avec l'équipe
-- Mise en place du planning
-- Mise au point avec l'équipe
-- Création de la maquette
-- Mise au point avec l'équipe
-- Définition des problèmes éventuels et des solutions
-- Amélioration de la maquette
+- Cadrage du projet avec le client
+- Étude et Analyse
+- Développement
+- Debriefing de l'équipe
+- Debriefing avec le client
+- Présentation du projet
 
 Si Projet finalisé
+
 - Exposition
 - Déploiement
+- Formation
 - Mise en place de la formation et de l'aide contextuel
 - Mise en vente
