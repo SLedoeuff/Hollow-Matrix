@@ -8,7 +8,7 @@
 #include <cstdlib>
 #include <typeinfo>
 #include "libb.h"
-
+//
 using namespace std;
 
 lcv::lcv(int x,int y,int z)
@@ -212,6 +212,46 @@ void matrice::transposition()
     }
 }
 
+void matrice::ecriture()
+{
+	ofstream fichier( "nom.txt" , ios::out | ios::trunc);
+	if(fichier)
+	{
+		lcv *tmp=tete;
+		fichier << largeur << ' ' << hauteur << ' ' << name;
+		while(tmp->suiv!=NULL){
+			fichier << ' ' << tmp->li << ' ' << tmp->co << ' ' << tmp->val;
+			tmp=tmp->suiv;
+		}
+		fichier.close();
+		cout << "sauvegarde effectuée" << endl;
+	}
+	else
+	{
+		cerr << "erreur !" << endl;
+	}
+}
 
-void matrice::lecture(){}
-void matrice::ecriture(){}
+void matrice::lecture()
+{
+	ifstream fichier( "nom.txt" , ios::in);
+	if(fichier)
+	{
+		lcv *tmp=tete;
+		fichier >> largeur;
+		fichier >> hauteur;	
+		fichier >> name;
+		while(fichier){
+			fichier >> tmp->li;
+			fichier >> tmp->co;
+			fichier >> tmp->val;
+			tmp=tmp->suiv;
+		}
+		fichier.close();
+		cout << "chargement effectué" << endl;
+	}
+	else
+	{
+		cerr << "erreur !" << endl;
+	}
+}

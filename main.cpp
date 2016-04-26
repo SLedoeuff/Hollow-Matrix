@@ -51,6 +51,12 @@ int main() {
 	C.affiche();
 	C=C.carre();
 	C.affiche();
-
+/*-----SAVE AND LOAD-----*/
+	cout<<"save and load here"<<endl;
+	C.ecriture();
+	C.soustraction(B);
+	C.affiche();
+	C.lecture();
+	C.affiche();
   return 0;
 }	

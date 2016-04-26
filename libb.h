@@ -44,8 +44,6 @@ class matrice
 		matrice multiplication(matrice);
 		matrice carre();
 		void transposition();
-
-
 		void lecture();
 		void ecriture();
 		
