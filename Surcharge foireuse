@@ -1,0 +1,69 @@
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <fstream>
+#include <iomanip>
+#include <cstdlib>
+#include "libb.h"
+
+using namespace std;
+
+matrice matrice::operator+ (matrice m1, matrice m2) // Surcharge Addition
+{
+	matrice m3;
+
+	m3 = m1+m2;
+
+	return m3;
+}
+
+istream matrice::operator>> (istream &in, matrice & m) // Surcharge Lecture
+{
+	in >> m.name;
+	in >> m.largeur;
+	in >> m.hauteur;
+	in >> m.tete;
+
+	return in;
+
+}
+
+void matrice::operator- (matrice & m1, matrice & m2) // Surcharge Sousstraction
+{
+	matrice m3;
+
+	mm3 = m1-m2;
+
+	return m3;
+
+}
+matrice matrice::operator* (matrice & m1, matrice & m2) // Surcharge Multiplication
+{
+	matrice m3;
+
+	mm3 = m1*m2;
+
+	return m3;
+}
+void matrice::operator / (matrice & m) // Surcharge Transposition
+{
+	
+}
+
+ostream matrice::operator<< (ostream &o, matrice & m) // Surcharge Affichage
+{
+	o<<endl<<"matrice "<<this->name<<endl;
+	o<<setw(10)<<right<<"ligne"<<setw(10)<<right<<"colonne"<<setw(10)<<right<<"valeur"<<endl;
+	lcv* temp=tete;
+	while(temp->suiv!=NULL)
+	{
+		if(temp->val!=0)
+		{
+			o<<setw(10)<<right<<temp->li<<setw(10)<<right<<temp->co<<setw(10)<<right<<temp->val<<endl;
+			temp=temp->suiv;
+		}
+	}
+	o<<setw(10)<<right<<temp->li<<setw(10)<<right<<temp->co<<setw(10)<<right<<temp->val<<endl;
+	o<<endl;
+}
