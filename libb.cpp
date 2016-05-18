@@ -1,23 +1,16 @@
-#include <iostream>	//
-#include <math.h>	//
-#include <stdlib.h>	//
-#include <string>	//
-#include <string.h>	//
-#include <fstream>	//
-#include <iomanip>	//
-#include <cstdlib>	//
-#include <typeinfo>	//
-#include <map>          //
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include <string>
+#include <string.h>
+#include <fstream>
+#include <iomanip>
+#include <cstdlib>
+#include <typeinfo>
 #include "libb.h"
-
+//
 using namespace std;
-lcv::lcv()
-{
-	li=0;
-	co=0;
-	val=0;
-	suiv=NULL;
-}
+
 lcv::lcv(int x,int y,int z)
 {
 	li=x;
@@ -26,13 +19,7 @@ lcv::lcv(int x,int y,int z)
 	suiv=NULL;
 }
 
-matrice::matrice()
-{
-	hauteur=0;
-	largeur=0;
-	name=" ";
-	tete=NULL;
-}
+
 matrice::matrice(string nom,int x,int y)
 {
 	hauteur=y;
@@ -48,7 +35,7 @@ void matrice::action(int x,int y,int z,string act)
 	{
 		lcv *B=new lcv(x,y,z);
 		tete=B;
-		if(act=="ajj")cout<<"Ajout de la valeur "<<z<<" a la position ("<<x<<"."<<y<<") dans la matrice "<<this->name<<endl;
+		if(act=="ajj")/*cout<<"Ajout de la valeur "<<z<<" a la position ("<<x<<"."<<y<<") dans la matrice "<<this->name<<endl*/;
 		
 		return;
 	}
@@ -57,7 +44,7 @@ void matrice::action(int x,int y,int z,string act)
 	{
 		if(temp->li==x && temp->co==y)
 		{
-			if(act=="ajj")cerr<<"Erreur il y a deja la valeur "<<temp->val<<" a la position ("<<temp->li<<"."<<temp->co<<") , impossible d ajouter la valeur dans la matrice "<<this->name<<z<<endl;
+			if(act=="ajj")/*cerr<<"Erreur il y a deja la valeur "<<temp->val<<" a la position ("<<temp->li<<"."<<temp->co<<") , impossible d ajouter la valeur dans la matrice "<<this->name<<z<<endl*/;
 			else if(act=="add")
 			{
 				temp->val=temp->val+z;
@@ -68,7 +55,7 @@ void matrice::action(int x,int y,int z,string act)
 	}
 	if(temp->li==x && temp->co==y)
 	{
-		if(act=="ajj")cerr<<"Erreur il y a deja la valeur "<<temp->val<<" a la position ("<<temp->li<<"."<<temp->co<<") , impossible d ajouter la valeur dans la matrice "<<this->name<<z<<endl;
+		if(act=="ajj")/*cerr<<"Erreur il y a deja la valeur "<<temp->val<<" a la position ("<<temp->li<<"."<<temp->co<<") , impossible d ajouter la valeur dans la matrice "<<this->name<<z<<endl*/;
 		else if(act=="add")
 		{
 			temp->val=temp->val+z;
@@ -77,7 +64,7 @@ void matrice::action(int x,int y,int z,string act)
 	}
 	lcv* B=new lcv (x,y,z);
 	temp->suiv=B;
-	if(act=="ajj")cout<<"Ajout de la valeur "<<z<<" a la position ("<<x<<"."<<y<<") dans la matrice "<<this->name<<endl;
+	if(act=="ajj")/*cout<<"Ajout de la valeur "<<z<<" a la position ("<<x<<"."<<y<<") dans la matrice "<<this->name<<endl*/;
 	
 }
 
@@ -225,6 +212,119 @@ void matrice::transposition()
     }
 }
 
+void matrice::ecriture()
+{
+	ofstream fichier( "nom.txt" , ios::out | ios::trunc);
+	if(fichier)
+	{
+		lcv *tmp=tete;
+		fichier << largeur << ' ' << hauteur << ' ' << name;
+		while(tmp->suiv!=NULL){
+			fichier << ' ' << tmp->li << ' ' << tmp->co << ' ' << tmp->val;
+			tmp=tmp->suiv;
+		}
+		fichier.close();
+		cout << "sauvegarde effectuée" << endl;
+	}
+	else
+	{
+		cerr << "erreur !" << endl;
+	}
+}
 
-void matrice::lecture(){}
-void matrice::ecriture(){}
+void matrice::lecture()
+{
+	ifstream fichier( "nom.txt" , ios::in);
+	if(fichier)
+	{
+		lcv *tmp=tete;
+		fichier >> largeur;
+		fichier >> hauteur;	
+		fichier >> name;
+		while(fichier){
+			fichier >> tmp->li;
+			fichier >> tmp->co;
+			fichier >> tmp->val;
+			tmp=tmp->suiv;
+		}
+		fichier.close();
+		cout << "chargement effectué" << endl;
+	}
+	else
+	{
+		cerr << "erreur !" << endl;
+	}
+}
+
+void matrice::remplir_test()
+{
+	for(int i=0;i<=8000;i++)
+	{
+		int j=i;
+		ajout(i,j,4);
+	}
+}
+
+void matrice::battery_test()
+{
+	cout<<"Initialisation du test"<<endl;
+	getchar();
+	matrice D("D",8000,8000);
+	cout<<"Declaration matrice n°1 éffectuée"<<endl;
+	getchar();
+	matrice E("E",8000,8000);
+	cout<<"Declaration matrice n°2 éffectuée"<<endl;
+	getchar();
+	D.remplir_test();
+	cout<<"Remplissage de la matrice n°1 éffectuée"<<endl;
+	getchar();
+	E.remplir_test();
+	cout<<"Remplissage de la matrice n°2 éffectuée"<<endl;
+	getchar();	
+	matrice F=D.multiplication(E);
+	cout<<"Multiplication des deux matrice et stockage dans matrice n°3 éffectuée"<<endl;
+	getchar();	
+	D.addition(E);
+	cout<<"Addition de la matrice n°2 à la matrice n°1 éffectuée"<<endl;
+	getchar();	
+	F.ecriture();
+	cout<<"Ecriture dans un fichier de la matrice n°3 éffectuée"<<endl;
+	getchar();	
+	F.lecture();
+	cout<<"Lecture à partir d'un fichier de la matrice n°3 éffectuée"<<endl;
+	getchar();	
+	F.affiche();
+	cout<<"Affichage de la matrice n°3 (multiplication de matrice 1 et 2) éffectué"<<endl;
+	getchar();
+	D.affiche();
+	cout<<"Affichage de la matrice n°1 éffectué"<<endl;
+	getchar();
+	D.soustraction(E);
+	cout<<"Soustraction de la matrice n°2 à la matrice n°1 éffectuée"<<endl;
+	getchar();	
+	D.affiche();
+	cout<<"Affichage de la matrice n°1 éffectué"<<endl;
+	getchar();	
+	matrice I=D.carre();
+	cout<<"Declaration de la matrice n°4 comme étant le carre de la matrice n°1 éffectuée"<<endl;
+	getchar();	
+	I.affiche();
+	cout<<"Affichage de la matrice n°4 éffectué"<<endl;
+	getchar();	
+	matrice H("H",50,50);
+	for(int i=0;i<=49;i++)
+	{
+		int j=i+1;
+		H.ajout(i,j,4);
+	}
+	cout<<"Declaration et remplissage de la matrice n°5 éffectuée"<<endl;
+	getchar();	
+	H.affiche();
+	cout<<"Affichage de la matrice n°5 éffectué"<<endl;
+	getchar();	
+	H.transposition();
+	cout<<"Transposition de la matrice n°5 éffectuée"<<endl;
+	getchar();	
+	H.affiche();
+	cout<<"Affichage de la matrice H après transposition effectué"<<endl;
+}
