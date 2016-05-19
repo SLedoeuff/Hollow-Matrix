@@ -276,8 +276,8 @@ void app::cons(){
 						<<"lecture(nom de la matrice,nom du fichier):lit la matrice dans le fichier"<<endl
 						<<"A+B : ajoute la matrice B a la matrice A"<<endl
 						<<"A-B : soustrait la matrice B a la matrice A"<<endl
-						<<"A*B : multiplie la matrice B et la matrice A"<<endl
-						<<"A^ : met la matrice A au carré"<<endl
+						<<"A*B(C) : multiplie la matrice B et la matrice A et met le resultat dans la matrice  C"<<endl
+						<<"A^(C) : met la matrice A au carré et met le resultat dans la matrice  C"<<endl
 						<<"A\' : fait la transposé de la matrice A"<<endl;
 
 				}
