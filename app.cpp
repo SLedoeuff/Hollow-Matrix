@@ -365,14 +365,14 @@ void app::cons(){
 			}
 		}
 		catch(int a){
-			if (a==1)cout<<endl<<endl<<"Erreur,commande invalide, utiliser la commande 'help' pour obtenir les commande existante"<<endl<<endl; 
-			else if (a==2)cout<<endl<<"Erreur,vous essayer de crer une matrice deja existante"<<endl<<endl; 
+			if (a==1)cout<<endl<<endl<<"Erreur,commande invalide, utiliser la commande 'help' pour obtenir les commandes existantes"<<endl<<endl; 
+			else if (a==2)cout<<endl<<"Erreur,vous essayer de créer une matrice deja existante"<<endl<<endl; 
 			else if (a==3)cout<<endl<<"Erreur,vous essayer d'ajouter une valeur a une matrice inexistante"<<endl<<endl;
 			else if (a==4)cout<<endl<<"Erreur,vous essayer d'ajouter une valeur hors de la matrice"<<endl<<endl;
 			else if (a==5)cout<<endl<<"Erreur,vous essayer d'afficher une matrice inexistante"<<endl<<endl;
 			else if (a==8)cout<<endl<<"Erreur,vous essayer de manipuler une matrice inexistante"<<endl<<endl; 
 			else if (a==9)cout<<endl<<"Erreur,la fonction d'aide s'écris juste \"help\""<<endl<<endl; 
-			else if (a==10)cout<<endl<<"Erreur,valeur tros basse"<<endl<<endl; 
+			else if (a==10)cout<<endl<<"Erreur,valeur trop basse"<<endl<<endl; 
 		 
 		}
 	}while (czi!="stop");   
