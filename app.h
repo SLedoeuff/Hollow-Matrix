@@ -19,27 +19,19 @@
 
 using namespace std;
 
-/*! \class CPlayer
-   * \brief classe representant le lecteur
-   *
-   *  La classe gere la lecture d'une liste de morceaux
-   */
+//!
+//! \class app
+//! \brief classe permettant d'utiliser les fonction en invité de commande
+//!
 class app
 {
 	private:
-//!
-//! \fn void app::cons()
-//! \brief 
-//!
-//! \param Aucun
-//! \return Aucun
-//!
 		map <string,matrice> cont;
 
 	public:
 //!
 //! \fn void app::cons()
-//! \brief 
+//! \brief constructeur par defaut de la classe app, ne sert que pour l'initialisation
 //!
 //! \param Aucun
 //! \return Aucun
@@ -47,8 +39,8 @@ class app
 		app();
 //!
 //! \fn void app::cons()
-//! \brief 
-//!
+//! \brief permet de traiter les données que l'utilisateur rentre dans l'invité de commande pour éxécuter les calculs matriciels
+//!   il prends ce que l'utilisateur a entré, les mets dans une string, et les traites caractère par caractère.
 //! \param Aucun
 //! \return Aucun
 //!
@@ -56,7 +48,5 @@ class app
 		
 		
 };
-
-
 
 #endif
