@@ -1,3 +1,9 @@
+//!
+//! \file libb.cpp
+//! \brief fonctions qui permet d'effectuer les calculs matriciels
+//! \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
+//! \version 1.0
+//!
 #include <iostream>
 #include <math.h>
 #include <stdlib.h>

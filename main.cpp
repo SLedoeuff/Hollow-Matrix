@@ -1,13 +1,19 @@
-#include <iostream>	//
-#include <math.h>	//
-#include <stdlib.h>	//
-#include <string>	//
-#include <string.h>	//
-#include <fstream>	//
-#include <iomanip>	//
-#include <cstdlib>	//
-#include <typeinfo>	//
-#include <map>          //
+//!
+//! \file main.cpp
+//! \brief ??? j'sais pas quoi mettre xD
+//! \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
+//! \version 1.0
+//!
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include <string>
+#include <string.h>
+#include <fstream>
+#include <iomanip>
+#include <cstdlib>
+#include <typeinfo>
+#include <map>
 #include "libb.h"
 #include "app.h"
 
