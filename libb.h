@@ -26,8 +26,8 @@ using namespace std;
 //! \class lcv
 //! \brief élément de type ligne-colonne-valeur
 //!
-//!  Permet de remplir des listes contenant des matrices creuse, on ne garde de celle ci
-//!  que ces coordonnées, ligne et colonne, ainsi que sa valeur.
+//!  Permet de remplir des listes contenant des matrices creuses, on ne garde de celle ci
+//!  que ces coordonnées, ligne et colonne, ainsi que sa valeur différente de 0.
 //!
 class lcv
 {
@@ -73,7 +73,7 @@ class matrice
 	public:
 //!
 //! \fn matrice(string,int,int);
-//! \brief constructeur avec argument d'une matrice
+//! \brief constructeur avec arguments d'une matrice
 //!
 //! \param string: nom de la matrice, int:hauteur de la matrice, int: largeur de la matrice
 //! \return Aucun
@@ -93,7 +93,7 @@ class matrice
 //! \fn void action(int,int,int,string);
 //! \brief ajoute un element à la matrice
 //!
-//! \param int:valeur à ajouter a la matrice, int:ligne d'ajout, int:colonne d'ajout, string: ???
+//! \param int:valeur à ajouter à la matrice, int:ligne d'ajout, int:colonne d'ajout, string: nom de l'operation à effectuer
 //! \return Aucun
 //!
 		void action(int,int,int,string);
@@ -102,7 +102,7 @@ class matrice
 //! \fn void ajout(int,int,int);
 //! \brief appelle la fonction action, pour ajouter un element a la matrice
 //!
-//! \param int:valeur à ajouter a la matrice, int:ligne d'ajout, int:colonne d'ajout
+//! \param int:valeur à ajouter à la matrice, int:ligne d'ajout, int:colonne d'ajout
 //! \return Aucun
 //!
 		void ajout(int,int,int);
@@ -121,7 +121,7 @@ class matrice
 //! \brief permet d'additionner deux matrices
 //!
 //! \param matrice: la deuxième matrice à additionner
-//! \return Aucun, le resultat va remplacer la matrice instanciée ??
+//! \return Aucun, le resultat va remplacer l'objet (matrice) appellant la fonction
 //!
 		void addition(matrice);
 		
@@ -130,7 +130,7 @@ class matrice
 //! \brief permet de soustraire deux matrices
 //!
 //! \param matrice: la deuxième matrice à soustraire
-//! \return Aucun, le resultat va remplacer la matrice instanciée ??
+//! \return Aucun, le resultat va remplacer l'objet (matrice) appellant la fonction
 //!
 		void soustraction(matrice);
 		
@@ -164,7 +164,7 @@ class matrice
 
 //!
 //! \fn void lecture(string);
-//! \brief permet de récupéré une matrice enregistré sur un document txt
+//! \brief permet de récupéré une matrice enregistré sur un document texte (.txt)
 //!
 //! \param string: nom du fichier
 //! \return Aucun
@@ -173,7 +173,7 @@ class matrice
 		
 //!
 //! \fn void ecriture(string);
-//! \brief permet d'enregistrer une matrice dans un document txt
+//! \brief permet d'enregistrer une matrice dans un document texte (.txt)
 //!
 //! \param string: nom du fichier
 //! \return Aucun
@@ -182,7 +182,7 @@ class matrice
 		
 //!
 //! \fn void remplir_test();
-//! \brief Permet d'effectuer une batterie de test ???
+//! \brief Prépare une batterie de test des fonctionnalités de la librairie en remplissant au préalable une matrice avec des valeurs
 //!
 //! \param Aucun
 //! \return Aucun
@@ -191,7 +191,7 @@ class matrice
 		
 //!
 //! \fn void battery_test();
-//! \brief Effectue une batterie de test afin de voir le fonctionnement des opérations matricielles ???
+//! \brief Effectue une batterie de test afin de voir le fonctionnement des opérations matricielles
 //!
 //! \param Aucun
 //! \return Aucun
