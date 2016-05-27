@@ -1,6 +1,6 @@
 //!
 //! \file main.cpp
-//! \brief ??? j'sais pas quoi mettre xD
+//! \brief fichier principal qui charge la console et les fonctions utilisables
 //! \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
 //! \version 1.0
 //!
