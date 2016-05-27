@@ -1,9 +1,9 @@
-//!
-//! \file app.cpp
-//! \brief fonctions d'utilisation des opérations matricielles sur console
-//! \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
-//! \version 1.0
-//!
+/*! \file app.cpp
+* \brief fonctions d'utilisation des opérations matricielles sur console
+* \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
+* \version 1.0
+*/
+
 #include <iostream>
 #include <math.h>
 #include <stdlib.h>
@@ -29,15 +29,15 @@ void app::cons(){
 	string czi;
 	string debut;
 	string fin;
-	do	//boucle principale du prog
+	do
 	{	
 		try{
 			czi="";
 			debut="";
 			fin="";
-			getline(cin, czi);	//saisie de comande par lutilisateur
+			getline(cin, czi);
 			if (czi=="\0");	
-			else if(czi!="stop") //verifie si lutilisateur a demander a areter le prog
+			else if(czi!="stop") 
 			{
 				while(czi[0]==' ')czi.erase(0,1);													//
 				while(czi[0]!=' ' && czi[0]!='+' && czi[0]!='-' && czi[0]!='*' && czi[0]!='\'' && czi[0]!='^' && czi[0]!='(' && czi[0]!='\0')		// isole la premire partie de la saisie pour l'analyser
