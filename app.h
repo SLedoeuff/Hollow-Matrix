@@ -1,6 +1,6 @@
 //!
 //! \file app.h
-//! \brief regroupe les fonctions consoles
+//! \brief regroupe les fonctions consoles de la librairie
 //! \author DEMOGUE Bruno, HUOT Amaury, LE DOEUFF Sacha, BASTIDE Anthony
 //! \version 1.0
 //!
@@ -40,7 +40,7 @@ class app
 //!
 //! \fn void app::cons()
 //! \brief permet de traiter les données que l'utilisateur rentre dans l'invité de commande pour éxécuter les calculs matriciels
-//!   il prends ce que l'utilisateur a entré, les mets dans une string, et les traites caractère par caractère.
+//!   il prends ce que l'utilisateur a entré, les mets dans une string, et traite l'information caractère par caractère.
 //! \param Aucun
 //! \return Aucun
 //!
