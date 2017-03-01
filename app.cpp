@@ -186,7 +186,7 @@ void app::cons(){
 					while(czi[1]==' ')czi.erase(1,1);											//
 					while(czi[1]!='\0' && czi[1]!=')') 											//
 					{															//
-						if((czi[1]<'0' || czi[1]>'9') && (czi[1]<'a' || czi[1]>'z')&& (czi[1]<'A' || czi[1]>'Z'))th(1);			//decoupe le reste en 2 partie 
+						if((czi[1]<'0' || czi[1]>'9') && (czi[1]<'a' || czi[1]>'z')&& (czi[1]<'A' || czi[1]>'Z'))throw(1);			//decoupe le reste en 2 partie 
 						fin=fin+czi[1];													//
 						czi.erase(1,1);													//
 						while(czi[1]==' ')czi.erase(1,1);										//
